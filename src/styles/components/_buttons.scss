@@ -1,0 +1,13 @@
+.btn {
+    &--primary {
+        background-color: var(--dark-gray-blue);
+        color: var(--white);
+        padding: 1.5rem 1.6rem;
+        border-radius: 3rem;
+        transition: background-color 250ms linear;
+
+        &:hover {
+            background-color:  var(--cobalt-blue);
+        }
+    }
+}
