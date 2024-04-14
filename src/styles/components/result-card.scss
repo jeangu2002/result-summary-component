@@ -21,6 +21,27 @@
             align-items: center;
             gap: .2rem;
             border-radius: 50%;
+
+            & >strong {
+                font-size: 1.5em;
+            }
+            & >p {
+                font-size: .7em;
+            }
+
+    }
+
+    .appreciation {
+        font-weight: 700;
+        font-size: 1.7em;
+        opacity: 0;
+        transform: scale(0);
+        transition: transform 250ms linear, opacity 250ms linear;
+
+        &.visible {
+            opacity: 1;
+            transform: scale(1);
+        }
     }
 }
 
@@ -30,6 +51,7 @@
     padding: 6rem 2rem 4rem 0;
     gap: 2.4rem;
     border-radius: 0/ 50%;
+    overflow: hidden;
 
     .stats-group {
         display: flex;
@@ -41,6 +63,13 @@
         justify-content: space-between;
         padding: 1.7rem;
         border-radius: 1rem;
+        transform: translateX(-120%);
+        opacity: 0;
+        transition: transform 250ms linear, opacity 250ms linear;
+        &.active {
+            transform: translateX(0);
+            opacity: 1;
+        }
         & > * {
             display: flex;
             align-items: center;
