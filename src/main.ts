@@ -62,4 +62,7 @@ window.addEventListener('DOMContentLoaded', () => {
       document.querySelector('.appreciation')?.classList.add('visible');
   }, 5000)
 
+  setTimeout(() => {
+    document.querySelector('.score-comparison')?.classList.add('visible');
+}, 6000)
 })
